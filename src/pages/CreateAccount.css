@@ -1,0 +1,133 @@
+/* Using the same base from App.css but customized for account creation page */
+.create-account-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    font-family: "Just Me Again Down Here", cursive;
+    border-radius: 32px;
+    position: relative;
+  }
+  
+  .header-text {
+    text-align: left;
+    font-size: 20px;
+    margin-bottom: 30px;
+    margin-top: 10px;
+  }
+  .header-text:hover{
+    cursor: pointer;
+  }
+  .header-text:active{
+    background-color: #f3f4f6;
+  }
+  
+  .form-title {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .form-title h1 {
+    font-size: 28px;
+    font-weight: normal;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-group label {
+    display: block;
+    font-size: 20px;
+    margin-bottom: 8px;
+  }
+  
+  .form-group input {
+    width: 100%;
+    padding: 10px 15px;
+    border: 1px solid rgba(0, 0, 0, 0.51);
+    border-radius: 90px;
+    font-size: 16px;
+    outline: none;
+    font-size: 20px;
+    font-family: "Just Me Again Down Here", cursive;
+    background-color: #D9D9D9; /* Light gray background */
+}
+
+  
+  .button-container {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 30px;
+  }
+  
+  .button-container button {
+    font-family: "Just Me Again Down Here", cursive;
+    font-weight: 400;
+    font-size: 18px;
+    margin-right: 10px;
+    letter-spacing: 6px;
+    color: #000;
+    border: 3px solid;
+    border-radius: 90px;
+    padding: 0.25em 0.5em;
+    box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+    position: relative;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+  }
+  
+  .button-container button:hover {
+    background-color: #f3f4f6;
+  }
+  
+  .button-container button:active {
+    transform: translateY(2px);
+  }
+  
+  .social-login {
+    margin-top: auto;
+    padding-top: 20px;
+    border-top: 1px solid #d1d5db;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .social-login a img {
+    width: 24px;
+    height: 24px;
+  }
+  .social-login a:nth-child(2) img {
+    margin-top: -6px; 
+    height: 36px;
+    width: 36px; /* Increase size for GitHub icon only */
+  }
+  /* For actual mobile screens */
+  @media (max-width: 480px) {
+    .create-account-container {
+      border-radius: 0;
+      border: none;
+    }
+    
+    .form-title h1 {
+      font-size: 24px;
+    }
+    
+    .form-group label {
+      font-size: 18px;
+    }
+  }
+  
+  /* Optional: Adding placeholder styles for better UI */
+  ::placeholder {
+    color: #9ca3af;
+    opacity: 0.7;
+  }
+  
+  /* Additional styling for form focus states */
+  .form-group input:focus {
+    border-color: hsl(203, 100%, 46%);
+  }

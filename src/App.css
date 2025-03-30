@@ -1,0 +1,100 @@
+.app-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.phone-frame {
+  width: 375px;
+  height: 712px;
+  background-color: #000;
+  border-radius: 40px;
+  padding: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  position: relative;
+  overflow: hidden;
+}
+
+.phone-screen {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  border-radius: 32px;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  padding: 0 20px;
+  max-width: 350px;
+  text-align: left;
+}
+
+.title {
+  font-size: 28px;
+  font-weight: normal;
+  line-height: 1.4;
+  align-items: left;
+  margin-bottom: 180px;
+  font-family: "Just Me Again Down Here", cursive;
+  color: #000;
+}
+
+.start-button {
+  font-family: "Just Me Again Down Here", cursive;
+  font-weight: 400;
+  font-size: 28px;
+  letter-spacing: 6px;
+  color: #000;
+  border: 3px solid;
+  border-radius: 90px;
+  padding: 0.25em 0.5em;
+  box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+  position: relative;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+.start-button:active{
+  box-shadow: 0px 0px 0px 0px;
+  top: 5px;
+  left: 5px;
+}
+.start-button:hover{
+  background-color: #f3f4f6;
+}
+/* Irregular handwriting effect */
+.start-button {
+  transform: rotate(-1deg);
+}
+
+/* For actual mobile screens */
+@media (max-width: 480px) {
+  .phone-frame {
+    width: 100%;
+    height: 100vh;
+    border-radius: 0;
+    padding: 0;
+  }
+  
+  .phone-screen {
+    border-radius: 0;
+  }
+  
+  .title {
+    font-size: 24px;
+    margin-bottom: 150px;
+  }
+}
