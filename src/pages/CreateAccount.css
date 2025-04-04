@@ -101,9 +101,9 @@
     height: 24px;
   }
   .social-login a:nth-child(2) img {
-    margin-top: -6px; 
+    margin-top: 6px; 
     height: 36px;
-    width: 36px; /* Increase size for GitHub icon only */
+    width: 26px; /* Increase size for GitHub icon only */
   }
   /* For actual mobile screens */
   @media (max-width: 480px) {

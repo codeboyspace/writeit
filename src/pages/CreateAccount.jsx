@@ -49,7 +49,7 @@ const CreateAccount = () => {
           <img src={googleIcon} alt="Google" />
         </a>
         <a href="#">
-          <img src={githubIcon} alt="GitHub" style={{ width: '50px', height: '50px' }} /> {/* Increase size */}
+          <img src={githubIcon} alt="GitHub" style={{ marginTop: "-6px" ,height: "36px", width: "36px" }} /> {/* Increase size */}
         </a>
       </div>
     </div>

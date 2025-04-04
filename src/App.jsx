@@ -4,7 +4,8 @@ import './App.css';
 import CreateAccount from '../src/pages/CreateAccount.jsx';
 import LoginAccount from '../src/pages/LoginAccount.jsx';
 import HomeForm  from './pages/HomeForm.jsx';
-
+import PreviewPage  from './pages/Preview.jsx';
+import DownloadApp from './pages/Download.jsx';
 // Home component with navigation
 function Home() {
   const navigate = useNavigate();
@@ -36,6 +37,8 @@ function App() {
               <Route path="/create-account" element={<CreateAccount />} />
               <Route path="/login" element={<LoginAccount/>} />
               <Route path="/home" element={<HomeForm/>} />
+              <Route path="/preview" element={<PreviewPage/>}/> 
+              <Route path="/download" element={<DownloadApp/>}/>
             </Routes>
           </div>
         </div>

@@ -1,0 +1,73 @@
+.download-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    border: 2px solid #000;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+  }
+  
+  .message {
+    font-size: 18px;
+    margin-bottom: 20px;
+    font-family:"Just Me Again Down Here", cursive ;
+    text-align: center;
+  }
+  
+  .download-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    max-width: 400px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #eabdbd9f;
+    margin-bottom: 20px;
+  }
+  
+  .file-name {
+    font-size: 16px;
+    font-weight: normal;
+    letter-spacing: 2px;
+    margin-right: 10px;
+    font-family:"Just Me Again Down Here", cursive ;
+    background-color: #333;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 3px;
+  }
+  
+  .download-button a {
+    text-decoration: none;
+    color: #fff;
+    background-color: #007BFF;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .download-button .icon {
+    font-size: 24px;
+    height: 3px;
+    font-weight: bold;
+  }
+  
+  .experience-input input {
+    width: 250px;
+    padding: 10px;
+    font-size: 16px;
+    font-family:"Just Me Again Down Here", cursive ;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+  
