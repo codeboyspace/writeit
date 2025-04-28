@@ -39,7 +39,7 @@ const Preview = ({ data }) => {
 
     try {
       // Submit generation request
-      const response = await fetch(`https://fastapi-backend-dw9qqzzpv-codeboyspaces-projects.vercel.app/generate`, {
+      const response = await fetch(`https://18d9-2401-4900-7b92-4edd-f8c2-f446-3113-f944.ngrok-free.app/generate`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -67,7 +67,7 @@ const Preview = ({ data }) => {
 
   const pollJobStatus = async (jobId) => {
     try {
-      const response = await fetch(`https://fastapi-backend-dw9qqzzpv-codeboyspaces-projects.vercel.app/status/${jobId}`);
+      const response = await fetch(`https://18d9-2401-4900-7b92-4edd-f8c2-f446-3113-f944.ngrok-free.app/status/${jobId}`);
 
       if (!response.ok) {
         throw new Error(`API error: ${response.status}`);
@@ -84,7 +84,7 @@ const Preview = ({ data }) => {
         setStatusMessage(statusHtml);
 
         // Navigate to the Download page with the download URL
-        const downloadUrl = `https://fastapi-backend-dw9qqzzpv-codeboyspaces-projects.vercel.app/download/${jobId}`;
+        const downloadUrl = `https://18d9-2401-4900-7b92-4edd-f8c2-f446-3113-f944.ngrok-free.app/download/${jobId}`;
         navigate('/download', { state: { downloadUrl } });
 
         return; // Stop polling
