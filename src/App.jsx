@@ -33,7 +33,7 @@ function App() {
         <div className="phone-frame">
           <div className="phone-screen">
             <Routes>
-              <Route path="/" element={<Home />} />
+              <Route path="/" element={<HomeForm />} />
               <Route path="/create-account" element={<CreateAccount />} />
               <Route path="/login" element={<LoginAccount/>} />
               <Route path="/home" element={<HomeForm/>} />

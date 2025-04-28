@@ -1,28 +1,22 @@
 import React from 'react';
+import { useLocation } from 'react-router-dom';
 import './Download.css'; // Ensure this CSS file exists
 
 const Download = () => {
+  const location = useLocation();
+  const { downloadUrl } = location.state || {};
+
   return (
     <div className="download-container">
       <div className="message">
         <p>Your document is ready to download</p>
       </div>
-
-      <div className="download-box">
+      <a href={downloadUrl} download>
         <div className="file-name">
-          Clouding_CaseStudy.pdf
+          Click to download
         </div>
-        <div className="download-button">
-          <a href="#" download>
-            <span className="icon">↓</span>
           </a>
         </div>
-      </div>
-
-      <div className="experience-input">
-        <input type="text" placeholder="Share your experience here" />
-      </div>
-    </div>
   );
 };
 

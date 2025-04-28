@@ -28,7 +28,7 @@
     padding: 15px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    background-color: #eabdbd9f;
+    background-color: black;
     margin-bottom: 20px;
   }
   
@@ -66,7 +66,7 @@
     padding: 10px;
     font-size: 16px;
     font-family:"Just Me Again Down Here", cursive ;
-    border: 1px solid #ccc;
+    border: 1px solid black;
     border-radius: 5px;
     box-sizing: border-box;
   }

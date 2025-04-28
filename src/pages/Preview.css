@@ -12,21 +12,25 @@
     box-sizing: border-box;
   }
   
+  .form-container{
+    font-family:"Just Me Again Down Here", cursive ;
+  }
   .image-container {
     display: flex;
     justify-content: center;
-    margin-bottom: -50px;
+    margin-bottom: -130px;
   }
   
   .case-study-image {
     width: 90%;
-    height: 80%; /* Adjusted to make room for the form */
+    height: 60%; /* Adjusted to make room for the form */
     border: 1px solid #ccc;
     border-radius: 10px;
   }
   
   .form-container {
-    width: 90%;
+    width: 100%;
+    max-width: 50%;
     max-width: 400px;
     height: 50%; /* Adjust height to enable scrolling */
     overflow-y: auto; /* Enable vertical scrolling */
@@ -40,7 +44,7 @@
   
   .form-group label {
     display: block;
-    font-size: 16px;
+    font-size: 22px;
     font-family:"Just Me Again Down Here", cursive ;
     margin-bottom: 5px;
   }
@@ -80,3 +84,22 @@
   .button-container button:hover {
     background-color: #f3f4f6;
   }
+  /* Spinner CSS */
+.spinner {
+  border: 8px solid rgba(0, 0, 0, 0.1);
+  border-top: 8px solid #000000;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 1s linear infinite;
+  margin: 20px auto; /* Center the spinner */
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
